@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.university.StudentController"
+      spacing="15" alignment="CENTER" prefWidth="700" prefHeight="500">
+
+    <Label text="University Management System"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="regNumberField" promptText="Registration Number"/>
+    <TextField fx:id="firstNameField" promptText="First Name"/>
+    <TextField fx:id="lastNameField" promptText="Last Name"/>
+    <TextField fx:id="emailField" promptText="Email Address"/>
+
+    <Button fx:id="saveButton" text="Save Student" onAction="#saveStudent"/>
+
+    <Label fx:id="statusLabel" text=""/>
+
+    <TableView fx:id="studentTable" prefHeight="250">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="regColumn" text="Registration Number" prefWidth="180"/>
+            <TableColumn fx:id="firstNameColumn" text="First Name" prefWidth="150"/>
+            <TableColumn fx:id="lastNameColumn" text="Last Name" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+</VBox>

@@ -22,3 +22,13 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+# Maven build output
+target/
+
+# Local environment and secrets
+.env
+*.properties
+# NetBeans generated files and private settings
+**/nbproject/private/
+**/build/
+**/dist/
